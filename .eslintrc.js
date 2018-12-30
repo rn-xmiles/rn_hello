@@ -3,21 +3,20 @@ module.exports = {
         browser: true,
         commonjs: true,
         es6: true,
-        node: true
+        node: true,
     },
     extends: 'eslint:recommended',
     parserOptions: {
         ecmaFeatures: {
-            jsx: true
+            jsx: true,
         },
         ecmaVersion: 2018,
-        sourceType: 'module'
+        sourceType: 'module',
     },
     plugins: ['react'],
     rules: {
         indent: ['error', 4],
-        'linebreak-style': ['error', 'windows'],
         quotes: ['error', 'single'],
-        semi: ['error', 'never']
-    }
-};
+        semi: ['error', 'never'],
+    },
+}

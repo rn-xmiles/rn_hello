@@ -1,13 +1,9 @@
 //@flow
 
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text } from 'react-native'
 
-const HelloWorld = () => (
-    <View>
-        <Text style={styles.hello}>Hello World</Text>
-    </View>
-)
+const HelloWorld = () => <Text style={styles.hello}>Hello World</Text>
 
 const styles = StyleSheet.create({
     hello: {

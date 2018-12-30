@@ -8,6 +8,8 @@
 
 import React, { Component } from 'react'
 import { Platform, StyleSheet, Text, View } from 'react-native'
+import HelloBlink from './components/HelloBlink'
+import HelloImage from './components/HelloImage'
 import HelloWorld from './components/HelloWorld'
 
 const instructions = Platform.select({
@@ -24,6 +26,9 @@ export default class App extends Component<Props> {
                 <Text style={styles.instructions}>To get started, edit App.js</Text>
                 <Text style={styles.instructions}>{instructions}</Text>
                 <HelloWorld />
+                <HelloImage />
+                <HelloBlink text={'No Children'} />
+                <HelloBlink text={'From Singcl:'}>燃烧吧！你的小宇宙</HelloBlink>
             </View>
         )
     }

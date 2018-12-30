@@ -5,9 +5,9 @@
  */
 
 import React, { PureComponent } from 'react'
-import { Text } from 'react-native'
+import { StyleSheet, Text } from 'react-native'
 
-type Props = { text: string, children: any }
+type Props = { text: string, children: any, style: StyleSheet.NamedStyles<any> }
 
 export default class HelloBlink extends PureComponent<Props> {
     static defaultProps = {
@@ -31,10 +31,10 @@ export default class HelloBlink extends PureComponent<Props> {
     render() {
         // 根据当前showText的值决定是否显示text内容
         const { isShowText } = this.state
-        const { text, children } = this.props
+        const { text, children, style } = this.props
         if (!isShowText) return null
         return (
-            <Text>
+            <Text style={style}>
                 {text}
                 {children}
             </Text>

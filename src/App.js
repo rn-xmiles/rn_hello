@@ -27,8 +27,10 @@ export default class App extends Component<Props> {
                 <Text style={styles.instructions}>{instructions}</Text>
                 <HelloWorld />
                 <HelloImage />
-                <HelloBlink text={'No Children'} />
-                <HelloBlink text={'From Singcl:'}>燃烧吧！你的小宇宙</HelloBlink>
+                <HelloBlink text={'No Children'} style={styles.bigBlue} />
+                <HelloBlink text={'From Singcl:'} style={[styles.bigBlue, styles.green]}>
+                    燃烧吧！你的小宇宙
+                </HelloBlink>
             </View>
         )
     }
@@ -50,5 +52,15 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         color: 'red',
         marginBottom: 5,
+    },
+
+    bigBlue: {
+        color: 'blue',
+        fontWeight: 'bold',
+        fontSize: 30,
+    },
+
+    green: {
+        color: 'green',
     },
 })

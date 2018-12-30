@@ -8,6 +8,7 @@
 
 import React, { Component } from 'react'
 import { Platform, StyleSheet, Text, View } from 'react-native'
+import FlexDimensionsBasics from './components/FlexDimensionsBasics'
 import HelloBlink from './components/HelloBlink'
 import HelloImage from './components/HelloImage'
 import HelloWorld from './components/HelloWorld'
@@ -31,6 +32,7 @@ export default class App extends Component<Props> {
                 <HelloBlink text={'From Singcl:'} style={[styles.bigBlue, styles.green]}>
                     燃烧吧！你的小宇宙
                 </HelloBlink>
+                <FlexDimensionsBasics />
             </View>
         )
     }
@@ -38,6 +40,9 @@ export default class App extends Component<Props> {
 
 const styles = StyleSheet.create({
     container: {
+        // flex-direction 默认是column, 而web 默认是 row
+        // 主轴交叉轴相反
+        flexDirection: 'column',
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',

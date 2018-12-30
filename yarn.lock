@@ -896,6 +896,17 @@ babel-core@^6.0.0, babel-core@^6.26.0:
     slash "^1.0.0"
     source-map "^0.5.7"
 
+babel-eslint@^10.0.1:
+  version "10.0.1"
+  resolved "http://registry.npm.taobao.org/babel-eslint/download/babel-eslint-10.0.1.tgz#919681dc099614cd7d31d45c8908695092a1faed"
+  dependencies:
+    "@babel/code-frame" "^7.0.0"
+    "@babel/parser" "^7.0.0"
+    "@babel/traverse" "^7.0.0"
+    "@babel/types" "^7.0.0"
+    eslint-scope "3.7.1"
+    eslint-visitor-keys "^1.0.0"
+
 babel-generator@^6.18.0, babel-generator@^6.26.0:
   version "6.26.1"
   resolved "http://registry.npm.taobao.org/babel-generator/download/babel-generator-6.26.1.tgz#1844408d3b8f0d35a404ea7ac180f087a601bd90"
@@ -1781,6 +1792,12 @@ escodegen@^1.9.1:
   optionalDependencies:
     source-map "~0.6.1"
 
+eslint-plugin-flowtype@^3.2.0:
+  version "3.2.0"
+  resolved "http://registry.npm.taobao.org/eslint-plugin-flowtype/download/eslint-plugin-flowtype-3.2.0.tgz#824364ed5940a404b91326fdb5a313a2a74760df"
+  dependencies:
+    lodash "^4.17.10"
+
 eslint-plugin-react@^7.12.0:
   version "7.12.0"
   resolved "http://registry.npm.taobao.org/eslint-plugin-react/download/eslint-plugin-react-7.12.0.tgz#fa6701063f2172c3e1db3a22d3db6d8bdc0179af"
@@ -1792,6 +1809,13 @@ eslint-plugin-react@^7.12.0:
     object.fromentries "^2.0.0"
     prop-types "^15.6.2"
     resolve "^1.9.0"
+
+eslint-scope@3.7.1:
+  version "3.7.1"
+  resolved "http://registry.npm.taobao.org/eslint-scope/download/eslint-scope-3.7.1.tgz#3d63c3edfda02e06e01a452ad88caacc7cdcb6e8"
+  dependencies:
+    esrecurse "^4.1.0"
+    estraverse "^4.1.1"
 
 eslint-scope@^4.0.0:
   version "4.0.0"
@@ -4744,6 +4768,10 @@ react-is@^16.6.3:
   version "16.7.0"
   resolved "http://registry.npm.taobao.org/react-is/download/react-is-16.7.0.tgz#c1bd21c64f1f1364c6f70695ec02d69392f41bfa"
 
+react-native-known-styling-properties@^1.0.4:
+  version "1.0.4"
+  resolved "http://registry.npm.taobao.org/react-native-known-styling-properties/download/react-native-known-styling-properties-1.0.4.tgz#4fee8b62ff8a5065550dbb34b03b592b7c2fdd1a"
+
 react-native@0.57.8:
   version "0.57.8"
   resolved "http://registry.npm.taobao.org/react-native/download/react-native-0.57.8.tgz#1a840fbe144cd3902cc14313a783ce28efc48cb9"
@@ -5592,6 +5620,10 @@ style-search@^0.1.0:
   version "0.1.0"
   resolved "http://registry.npm.taobao.org/style-search/download/style-search-0.1.0.tgz#7958c793e47e32e07d2b5cafe5c0bf8e12e77902"
 
+stylelint-config-react-native-css-modules@^2.1.0:
+  version "2.1.0"
+  resolved "http://registry.npm.taobao.org/stylelint-config-react-native-css-modules/download/stylelint-config-react-native-css-modules-2.1.0.tgz#362985dbc82954336f13961f112387e8bb83614e"
+
 stylelint-config-recommended@^2.1.0:
   version "2.1.0"
   resolved "http://registry.npm.taobao.org/stylelint-config-recommended/download/stylelint-config-recommended-2.1.0.tgz#f526d5c771c6811186d9eaedbed02195fee30858"
@@ -5601,6 +5633,12 @@ stylelint-config-standard@^18.2.0:
   resolved "http://registry.npm.taobao.org/stylelint-config-standard/download/stylelint-config-standard-18.2.0.tgz#6283149aba7f64f18731aef8f0abfb35cf619e06"
   dependencies:
     stylelint-config-recommended "^2.1.0"
+
+stylelint-react-native@^2.0.1:
+  version "2.0.1"
+  resolved "http://registry.npm.taobao.org/stylelint-react-native/download/stylelint-react-native-2.0.1.tgz#a3f9ec2ad8f84acce344de85c15601cca4c6f9c8"
+  dependencies:
+    react-native-known-styling-properties "^1.0.4"
 
 stylelint-scss@^3.3.0:
   version "3.4.4"
@@ -5612,7 +5650,7 @@ stylelint-scss@^3.3.0:
     postcss-selector-parser "^5.0.0"
     postcss-value-parser "^3.3.1"
 
-stylelint@^9.5.0:
+stylelint@^9.9.0:
   version "9.9.0"
   resolved "http://registry.npm.taobao.org/stylelint/download/stylelint-9.9.0.tgz#dde466e9b049e0bd30e912ad280f1a2ecf6efdf8"
   dependencies:
